@@ -24,6 +24,7 @@ public class BookStoreApplicationTests {
 	public void contextLoads() {
 
 		Book book = new Book("Sport","Comrade Marathon","2005",30.00);
+
 		Author author = new Author("Mlamuli");
 
 		book.getAuthors().add(author);
