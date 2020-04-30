@@ -35,7 +35,7 @@ public class ReadXmlData implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         ObjectMapper m = new XmlMapper();
-        InputStream stream = new FileInputStream(new File("C:\\Users\\F5313228\\Workspace\\Projects\\documents\\bookstore.xml"));
+        InputStream stream = new FileInputStream(new File("C:\\Users\\bookstore.xml"));
         TypeReference<List<Book>> reference = new TypeReference<List<Book>>(){};
         List<Book> booksList = m.readValue(stream,reference);;
         Set<Book> listOfBooks = new HashSet<>() ;
